@@ -433,6 +433,7 @@ form label {
 
     nav {
         flex-direction: column;
+
     }
 
     /*footer*/
@@ -530,4 +531,14 @@ form label {
         width: 100%;
     }
 
+    .seccion1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion2 {
+
+        flex-direction: column;
+        align-items: center;
+    }
 }
