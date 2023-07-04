@@ -73,6 +73,9 @@ body {
 .bg-green {
     background-color: #A0AB93;
 }
+.bg-light-yellow{
+    background-color: #F5F5EF;
+}
 
 header img {
     width: 100%;
@@ -297,7 +300,7 @@ footer ul li a {
 
 .promociones img {
     width: 400px;
-    height: 320px;
+    height: 305px;
     object-fit: cover;
     padding: 2px;
     margin-bottom: 5px;
@@ -311,6 +314,7 @@ footer ul li a {
 
 .promociones .filters {
     grid-area: filters;
+    text-align: left ;
 }
 
 .promociones .prod1 {
