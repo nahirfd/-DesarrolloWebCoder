@@ -1,0 +1,34 @@
+//variables globales
+
+//colores
+$mainColor: #EAE9D4;
+$secondaryColor: #F5F5EF;
+$keyColor: #5b6336;
+$detailColor: #A0AB93;
+$white: rgb(244, 230, 230);
+$black: rgb(20, 19, 19);
+
+//fonts 
+$mainFont: 'Poppins', sans-serif;
+$secondaryFont: verdana, sans-serif;
+
+//sizing
+$textSm: 0.9em;
+$textMd: 1.4em;
+$textLg: 1.6em;
+$textXl: 2.5em;
+
+//weight
+$textBold: 600;
+$textLight: 300;
+$textRegular: 500;
+
+
+//asi se llama a una variable:
+
+// p{
+//     font-family: $mainFont;
+//     color: $secondaryColor;
+//     font-size: $textMd;
+//     padding: 0 20px;
+// }

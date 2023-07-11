@@ -1,0 +1,139 @@
+/*============= PROMOS - GRID ===============*/
+.filters {
+    padding: 0 20px 30px 30px;
+
+    a {
+        color: $keyColor;
+        font-size: $textSm;
+        text-decoration: none;
+        margin-bottom: 4px;
+        text-transform: lowercase;
+
+        &:hover {
+            color: #A0AB93;
+        }
+    }
+
+    span {
+        display: block;
+        color: $keyColor;
+        margin: 10px 0;
+        letter-spacing: 1px;
+        font-size: $textSm;
+    }
+
+    select {
+        color: $keyColor;
+        border: none;
+        background-color: $detailColor;
+        margin-bottom: 10px;
+        font-size: $textSm;
+    }
+
+    li {
+        padding-left: 10px;
+        list-style: none;
+    }
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    button {
+        margin-left: 10px;
+        background-color: $detailColor;
+        color: $keyColor;
+        padding: 6px;
+        border: none;
+        border-radius: 3px;
+    }
+
+    input {
+        padding: 6px;
+        border-radius: 3px;
+        border: none;
+        background-color: $detailColor;
+    }
+}
+
+/*GRID AREA */
+
+.promociones {
+    display: grid;
+    grid-template-columns: 20% repeat(2, 1fr);
+    grid-template-rows: 80px repeat(3, 300px);
+    gap: 5px;
+    grid-template-areas:
+        "actions actions actions"
+        "filters prod1 prod1"
+        "filters prod2 prod3"
+        "filters prod2 prod4";
+
+    img {
+        width: 400px;
+        height: 305px;
+        object-fit: cover;
+        padding: 2px;
+        margin-bottom: 5px;
+
+    }
+
+    .actions {
+        padding: 0 30px;
+        grid-area: actions;
+    }
+
+    .filters {
+        grid-area: filters;
+        text-align: left;
+    }
+
+    .prod1 {
+        grid-area: prod1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 80px;
+
+        p {
+            width: 60%;
+            margin-left: 50px;
+        }
+    }
+
+    p {
+        text-align: right
+    }
+
+    .prod2 {
+        grid-area: prod2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 50px;
+    }
+
+    .prod3 {
+        grid-area: prod3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prod4 {
+        grid-area: prod4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        border-radius: 10px;
+    }
+
+
+}

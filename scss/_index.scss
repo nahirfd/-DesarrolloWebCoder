@@ -1,0 +1,54 @@
+/*============= INDEX FLORENTINA - GRID ===============*/
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20% repeat(3, 300px);
+    gap: 5px;
+    box-sizing: border-box;
+    grid-template-areas:
+        "title title title"
+        "fotoa fotoa fotob"
+        "fotoc fotod fotob"
+        "fotoe fotoe fotof";
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+}
+
+
+/*Definimos el nombre en el grid
+    usamos flex para acomodar*/
+
+.title1 {
+    grid-area: title;
+}
+
+.foto-a {
+    grid-area: fotoa;
+}
+
+.foto-b {
+    grid-area: fotob;
+}
+
+.foto-c {
+    grid-area: fotoc;
+}
+
+.foto-d {
+    grid-area: fotod;
+}
+
+.foto-e {
+    grid-area: fotoe;
+    margin-bottom: 10px;
+}
+
+.foto-f {
+    grid-area: fotof;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,19 @@
+/* nav BS */
+.botonera {
+    background-color: $mainColor;
+
+    img {
+        width: 100px;
+        margin-right: 80px;
+    }
+
+    ul li a {
+        color: $keyColor;
+
+        &:hover {
+            color: $detailColor;
+
+        }
+    }
+
+}

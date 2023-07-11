@@ -1,0 +1,21 @@
+//bootstrap grid contacto
+.bg-green {
+    background-color: $detailColor;
+}
+
+.bg-light-yellow {
+    background-color: $secondaryColor;
+}
+
+/*============= CONTACTO ===============*/
+
+form label {
+    color: #505A21;
+    ;
+    font-size: 0.8rem;
+    display: block;
+}
+
+.object-fit img {
+    object-fit: cover;
+}

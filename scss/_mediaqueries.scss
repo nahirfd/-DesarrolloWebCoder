@@ -1,0 +1,117 @@
+/*============= RESPONSIVE ===============*/
+
+@media (width < 768px) {
+
+    /*nav*/
+
+    nav {
+        flex-direction: column;
+
+    }
+
+    /*footer*/
+
+    footer {
+        flex-direction: column;
+    }
+
+    /*Pestaña INDEX FLORENTINA*/
+
+    #galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+        box-sizing: border-box;
+        grid-template-areas:
+            "title"
+            "fotoa"
+            "fotob"
+            "fotoc"
+            "fotoe"
+            "fotod"
+            "fotof";
+    }
+
+    #galeria img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    /*Pestaña Promos*/
+
+    .promociones {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+        grid-template-areas:
+            "actions"
+            "filters"
+            "prod1"
+            "prod2"
+            "prod3"
+            "prod4";
+    }
+
+    .promociones .actions {
+        justify-content: center;
+    }
+
+    .promociones .filters span,
+    .promociones .filters label,
+    .promociones .filters input[type="checkbox"],
+    .promociones .filters ul {
+        display: none;
+    }
+
+    .promociones .filters select {
+        width: 100%;
+        background-color: #A0AB93;
+        padding: 6px;
+        border-radius: 3px;
+        margin-top: 20px;
+
+    }
+
+    .promociones .prod1,
+    .promociones .prod2 {
+        flex-direction: column;
+        padding: 0px;
+
+    }
+
+    .promociones .prod1 p {
+        width: auto;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .promociones .prod2 p {
+        text-align: center;
+    }
+
+    /*Pestaña Yerbas*/
+
+    .productos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .productos figure {
+        width: 100%;
+    }
+
+    .seccion1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion2 {
+
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,28 @@
+footer {
+    background-color: $mainColor;
+    padding: 8px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+        width: 35px;
+        height: 53px;
+        fill: $keyColor;
+        margin-right: 10px;
+    }
+
+    ul {
+        list-style: none;
+
+        li a {
+            color: $keyColor;
+            font-size: $textSm;
+            text-decoration: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
