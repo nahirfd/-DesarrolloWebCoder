@@ -52,43 +52,45 @@
             "prod2"
             "prod3"
             "prod4";
-    }
 
-    .promociones .actions {
-        justify-content: center;
-    }
+        .actions {
+            justify-content: center;
+        }
 
-    .promociones .filters span,
-    .promociones .filters label,
-    .promociones .filters input[type="checkbox"],
-    .promociones .filters ul {
-        display: none;
-    }
+        .filters {
 
-    .promociones .filters select {
-        width: 100%;
-        background-color: #A0AB93;
-        padding: 6px;
-        border-radius: 3px;
-        margin-top: 20px;
+            span,
+            label,
+            input[type="checkbox"],
+            ul {
+                display: none;
+            }
 
-    }
+            select {
+                width: 100%;
+                background-color: #A0AB93;
+                padding: 6px;
+                border-radius: 3px;
+                margin-top: 20px;
 
-    .promociones .prod1,
-    .promociones .prod2 {
-        flex-direction: column;
-        padding: 0px;
+            }
+        }
 
-    }
+        .prod1,
+        .prod2 {
+            flex-direction: column;
+            padding: 0px;
+        }
 
-    .promociones .prod1 p {
-        width: auto;
-        text-align: center;
-        margin-left: 0;
-    }
+        .prod1 p {
+            width: auto;
+            text-align: center;
+            margin-left: 0;
+        }
 
-    .promociones .prod2 p {
-        text-align: center;
+        .prod2 p {
+            text-align: center;
+        }
     }
 
     /*Pestaña Yerbas*/
@@ -98,20 +100,21 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+
+        figure {
+            width: 100%;
+        }
+
+        .seccion1 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .seccion2 {
+
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
-    .productos figure {
-        width: 100%;
-    }
-
-    .seccion1 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .seccion2 {
-
-        flex-direction: column;
-        align-items: center;
-    }
 }

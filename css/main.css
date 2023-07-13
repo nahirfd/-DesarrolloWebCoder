@@ -1,39 +1,33 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+.scale-animation:hover {
+  transform: scale(1);
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.scale-animation-log:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.scale-animation-contacto:hover {
+  transform: translate(-10px);
+  cursor: pointer;
+  transition: all 1s;
+}
+
 .gral-btn, .actions .actions-btn, .productos figure .figure-btn {
   border: none;
   border-radius: 3px;
   background-color: #A0AB93;
 }
 
-/* .figure-btn{
-    @extend .gral-btn;
-    padding: 4px 25px;
-    text-align: center;
-    margin-bottom: 18px;
-  } */
-/*   .actions-btn{
-  @extend .gral-btn;
-  margin-left: 10px;
-  color: #5b6336;
-  padding: 6px;
-}
- */
 /* h1, h2, h3 {
   @include headers(10px, 8px, center)
 }
   */
-/* @mixin displaygrid( $columns, $rows, $gap, $areas){
-  display: grid;
-  box-sizing: border-box;
-  grid-template-columns: $columns;
-  grid-template-rows: $rows;
-  gap: $gap;
-  grid-template-areas: $areas;
-} */
-/*   #galeria {
-  @include displaygrid( repeat(3, 1fr), 20% repeat(3, 300px), 5px, "title title title" "fotoa fotoa fotob" "fotoc fotod fotob" "fotoe fotoe fotof")
-  } */
 /*============= CSS GENERAL ===============*/
 * {
   font-family: "Poppins", sans-serif;
@@ -361,14 +355,6 @@ main figure img {
   color: #5b6336;
 }
 
-.bg-green {
-  background-color: #A0AB93;
-}
-
-.bg-light-yellow {
-  background-color: #F5F5EF;
-}
-
 /*============= CONTACTO ===============*/
 form label {
   color: #505A21;
@@ -378,6 +364,14 @@ form label {
 
 .object-fit img {
   object-fit: cover;
+}
+
+.bg-green {
+  background-color: #A0AB93;
+}
+
+.bg-light-yellow {
+  background-color: #F5F5EF;
 }
 
 footer {
@@ -474,11 +468,11 @@ footer a {
   .productos figure {
     width: 100%;
   }
-  .seccion1 {
+  .productos .seccion1 {
     flex-direction: column;
     align-items: center;
   }
-  .seccion2 {
+  .productos .seccion2 {
     flex-direction: column;
     align-items: center;
   }

@@ -1,0 +1,17 @@
+.scale-animation:hover {
+    transform: scale(1);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.scale-animation-log:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.scale-animation-contacto:hover{
+    transform: translate(-10px);
+    cursor: pointer;
+    transition: all 1s;
+}

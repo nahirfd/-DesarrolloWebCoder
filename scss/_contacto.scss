@@ -1,12 +1,3 @@
-//bootstrap grid contacto
-.bg-green {
-    background-color: $detailColor;
-}
-
-.bg-light-yellow {
-    background-color: $secondaryColor;
-}
-
 /*============= CONTACTO ===============*/
 
 form label {
@@ -19,3 +10,13 @@ form label {
 .object-fit img {
     object-fit: cover;
 }
+
+//bootstrap grid contacto
+.bg-green {
+    background-color: $detailColor;
+}
+
+.bg-light-yellow {
+    background-color: $secondaryColor;
+}
+
