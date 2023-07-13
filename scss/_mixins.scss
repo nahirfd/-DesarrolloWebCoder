@@ -1,21 +1,50 @@
 //extends
-/* boton general
-.btn-gral {
+// boton general
+.gral-btn {
     border: none;
     border-radius: 3px;
     background-color: #A0AB93;
 }
-/* boton productos figure con extend btn gral 
-.figure-btn{
-    @extend .btn-gral;
+// boton productos figure con extend btn gral en yerbas (html <button class="figure-btn gral-btn">)
+/* .figure-btn{
+    @extend .gral-btn;
     padding: 4px 25px;
     text-align: center;
     margin-bottom: 18px;
-  }
-// boton actions con extend btn gral 
-  .btn-actions{
-  @extend .btn-gral;
+  } */
+// boton actions con extend btn gral en promos (html <button class="actions-btn gral-btn">)
+/*   .actions-btn{
+  @extend .gral-btn;
   margin-left: 10px;
   color: #5b6336;
   padding: 6px;
+}
+ */
+
+
+ // mixins
+
+ @mixin headers($marginbtm, $padding, $align){
+  margin-bottom: $marginbtm;
+  padding: $padding;
+  text-align: $align; 
+}
+
+/* h1, h2, h3 {
+  @include headers(10px, 8px, center)
+}
+  */
+
+
+/* @mixin displaygrid( $columns, $rows, $gap, $areas){
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: $gap;
+  grid-template-areas: $areas;
 } */
+
+/*   #galeria {
+  @include displaygrid( repeat(3, 1fr), 20% repeat(3, 300px), 5px, "title title title" "fotoa fotoa fotob" "fotoc fotod fotob" "fotoe fotoe fotof")
+  } */

@@ -1,24 +1,39 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"); /* boton general
-.btn-gral {
-    border: none;
-    border-radius: 3px;
-    background-color: #A0AB93;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+.gral-btn, .actions .actions-btn, .productos figure .figure-btn {
+  border: none;
+  border-radius: 3px;
+  background-color: #A0AB93;
 }
-/* boton productos figure con extend btn gral 
-.figure-btn{
-    @extend .btn-gral;
+
+/* .figure-btn{
+    @extend .gral-btn;
     padding: 4px 25px;
     text-align: center;
     margin-bottom: 18px;
-  }
-// boton actions con extend btn gral 
-  .btn-actions{
-  @extend .btn-gral;
+  } */
+/*   .actions-btn{
+  @extend .gral-btn;
   margin-left: 10px;
   color: #5b6336;
   padding: 6px;
+}
+ */
+/* h1, h2, h3 {
+  @include headers(10px, 8px, center)
+}
+  */
+/* @mixin displaygrid( $columns, $rows, $gap, $areas){
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: $gap;
+  grid-template-areas: $areas;
 } */
+/*   #galeria {
+  @include displaygrid( repeat(3, 1fr), 20% repeat(3, 300px), 5px, "title title title" "fotoa fotoa fotob" "fotoc fotod fotob" "fotoe fotoe fotof")
+  } */
 /*============= CSS GENERAL ===============*/
 * {
   font-family: "Poppins", sans-serif;
@@ -31,29 +46,24 @@
   text-align: center;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   margin-bottom: 10px;
-  padding: 8px;
+  padding: 8px 30px;
   text-align: center;
 }
 
 h1 {
   color: #5b6336;
-  padding: 8px 30px;
   font-size: 2.5em;
 }
 
 h2 {
   color: #A0AB93;
-  padding: 8px 30px;
   font-size: 1.6em;
 }
 
 h3 {
   color: #5b6336;
-  padding: 8px 30px;
   font-size: 1.4rem;
 }
 
@@ -181,11 +191,8 @@ main figure img {
   line-height: 1.4em;
   margin-bottom: 20px;
 }
-.productos figure button {
-  border: none;
+.productos figure .figure-btn {
   padding: 4px 25px;
-  background-color: #A0AB93;
-  border-radius: 3px;
   text-align: center;
   margin-bottom: 18px;
 }
@@ -228,13 +235,10 @@ main figure img {
   justify-content: flex-end;
   align-items: center;
 }
-.actions button {
+.actions .actions-btn {
   margin-left: 10px;
-  background-color: #A0AB93;
   color: #5b6336;
   padding: 6px;
-  border: none;
-  border-radius: 3px;
 }
 .actions input {
   padding: 6px;

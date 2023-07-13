@@ -41,14 +41,12 @@
     justify-content: flex-end;
     align-items: center;
 
-    button {
+    .actions-btn{
+        @extend .gral-btn;
         margin-left: 10px;
-        background-color: $detailColor;
-        color: $keyColor;
+        color: #5b6336;
         padding: 6px;
-        border: none;
-        border-radius: 3px;
-    }
+      }
 
     input {
         padding: 6px;
