@@ -18,7 +18,7 @@
   transition: all 1s;
 }
 
-.gral-btn, .actions .actions-btn, .productos figure .figure-btn {
+.gral-btn, .actions .actions-btn, .productos figure .figure-btn, .pag-error .error-btn {
   border: none;
   border-radius: 3px;
   background-color: #A0AB93;
@@ -94,6 +94,32 @@ main figure img {
   width: 300px;
   height: 400px;
   object-fit: cover;
+}
+
+.pag-error {
+  padding: 8px 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.pag-error .error-btn {
+  padding: 4px 25px;
+  text-align: center;
+  margin-bottom: 18px;
+  align-items: center;
+  font-size: 1.6em;
+  margin-top: 10px;
+}
+.pag-error .error-btn a {
+  list-style: none;
+  color: #5b6336;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+.pag-error .error-btn img {
+  height: 600px;
 }
 
 /* nav BS */

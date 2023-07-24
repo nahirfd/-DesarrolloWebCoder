@@ -1,0 +1,30 @@
+//pag error 404
+.pag-error {
+    padding: 8px 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .error-btn {
+        @extend .gral-btn;
+        padding: 4px 25px;
+        text-align: center;
+        margin-bottom: 18px;
+        align-items: center;
+        font-size: $textLg;
+        margin-top: 10px;
+
+        a {
+            list-style: none;
+            color: $keyColor;
+            font-size: $textSm;
+            text-decoration: none;
+        }
+
+        img {
+            height: 600px;
+        }
+    }
+}
