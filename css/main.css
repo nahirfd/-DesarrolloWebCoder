@@ -97,7 +97,6 @@ main figure img {
 }
 
 .pag-error {
-  padding: 8px 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -117,9 +116,6 @@ main figure img {
   color: #5b6336;
   font-size: 0.9em;
   text-decoration: none;
-}
-.pag-error .error-btn img {
-  height: 600px;
 }
 
 /* nav BS */
@@ -499,6 +495,25 @@ footer a {
     align-items: center;
   }
   .productos .seccion2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Pestaña Error 404*/
+  .pag-error {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pag-error img {
+    width: 600px;
+  }
+}
+@media (width < 870px) {
+  /*Pestaña Nosotros*/
+  .nosotros .seccion1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros .seccion2 {
     flex-direction: column;
     align-items: center;
   }

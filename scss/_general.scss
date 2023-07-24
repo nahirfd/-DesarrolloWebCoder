@@ -10,9 +10,11 @@
     text-align: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     @include headers(10px, 8px 30px, center)
-  } 
+}
 
 h1 {
     color: $keyColor;

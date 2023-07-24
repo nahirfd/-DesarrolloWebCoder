@@ -117,4 +117,32 @@
         }
     }
 
+    /*Pestaña Error 404*/
+    .pag-error {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 600px;
+        }
+    }
+
+}
+
+@media (width < 870px) {
+    /*Pestaña Nosotros*/
+
+    .nosotros {
+        .seccion1 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .seccion2 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
 }
